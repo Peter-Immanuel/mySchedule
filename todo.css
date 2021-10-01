@@ -1,0 +1,181 @@
+/* table of ::content
+
+general styles
+header styles
+task wrapper styles
+reminder wrapper styles 
+
+*/
+
+
+/* general styles */
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+}
+
+
+/* header styles */
+header{
+        height: 10vh;
+        background-color: rgb(230, 230, 230);
+        box-shadow:0px 0px 5px 0px  rgba(65, 56, 56, 0.789);
+
+}
+
+.navWrapper{
+        height:95%;
+        width:95%;
+        margin: auto;
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+        /* border: 1px solid orange; */
+}
+
+.logo-wrapper{
+        display: flex;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: rgba(0, 20, 26, 0.761);
+        justify-content: space-between;
+        align-items: center;
+}
+
+.logo-brand{
+        padding-left: 1rem;
+}
+
+.nav-links-wrapper{
+        display: flex;
+        width: 65%;
+        justify-content: right;
+        height: 100%;
+}
+
+.nav-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+       
+}
+
+.link-button{
+        border:none;
+        border-bottom: 1px solid rgb(189, 189, 189);
+        margin: 1rem;
+        padding: 0 0.2rem;
+        font-size: 1.2rem;
+        color: rgba(1, 37, 48, 0.446);
+        background-color: transparent;
+        cursor: pointer;
+}
+
+.link-button:hover{
+        color: rgb(0, 184, 240);
+        border-color: rgb(0, 184, 240) ;
+        transition:  0.35s;
+}
+.div-center{
+        display: flex;
+        justify-content: center;
+}
+
+
+
+/* main style */
+main{
+        width: 92%;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        color: rgba(36, 36, 36, 0.837);
+        /* border: 1px solid orange; */
+}
+
+.border{
+        margin-top:0.1vh ;
+        border:  0.5px solid rgba(206, 206, 206, 0.515); 
+        height: 100%;
+}
+.task-wrapper{
+        /* border:1px solid red; */
+        width: 68%;
+}
+
+
+/***********  task content wrapper style left ************/
+.task-content-wrapper{
+        padding: 7% 10%;
+        height: 100%;
+        position: relative;
+}
+
+.task-list-wrapper{
+        background-color: rgba(238, 240, 242, 0.426);
+        border-radius: 10px;
+        box-shadow:0px 5px 5px 5px  rgba(94, 83, 83, 0.09);
+        height: 100%;
+        display: flex;
+        flex-wrap:wrap ;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+}
+
+.task-list{
+        box-shadow:0px 3px 3px 3px  rgba(94, 83, 83, 0.049);
+        background-color: rgba(255, 255, 255, 0.816);
+        width: 40%;
+        height: 60%;
+        margin:30px ;
+        padding: 10px 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+}
+
+.list-name{
+        padding: 2.5%  0 1% 0 ;
+        margin: 10px 10px 0 10px;
+        border-bottom: 1px solid rgba(172, 172, 172, 0.816) ;
+        font-weight: 600;
+        font-size: 18.5px;
+}
+
+.list-body{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.list-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 10px;
+       
+}
+
+.text, .time{
+        /* border-bottom: 1px solid rgba(172, 172, 172, 0.816);     */
+        font-size: 14px;
+        margin-left: 10px;
+}
+
+
+
+
+/***********  reminder wrapper style right ************/
+
+.reminder-wrapper{
+        /* border:1px solid green ; */
+        width: 32%;
+}
